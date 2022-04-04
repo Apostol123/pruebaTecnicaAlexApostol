@@ -13,6 +13,19 @@
 		B49D2A7B27FB7C82006C5631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B49D2A7927FB7C82006C5631 /* Main.storyboard */; };
 		B49D2A7D27FB7C85006C5631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49D2A7C27FB7C85006C5631 /* Assets.xcassets */; };
 		B49D2A8027FB7C85006C5631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B49D2A7E27FB7C85006C5631 /* LaunchScreen.storyboard */; };
+		B49D2A8927FB8277006C5631 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2A8827FB8277006C5631 /* Coordinator.swift */; };
+		B49D2AB327FB83BB006C5631 /* ListOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2AA927FB83BA006C5631 /* ListOutput.swift */; };
+		B49D2AB427FB83BB006C5631 /* ListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2AAA27FB83BA006C5631 /* ListBuilder.swift */; };
+		B49D2AB527FB83BB006C5631 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2AAB27FB83BA006C5631 /* ListInteractor.swift */; };
+		B49D2AB627FB83BB006C5631 /* ListInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2AAC27FB83BB006C5631 /* ListInteractorProtocol.swift */; };
+		B49D2AB727FB83BB006C5631 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2AAD27FB83BB006C5631 /* ListPresenter.swift */; };
+		B49D2AB827FB83BB006C5631 /* ListPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2AAE27FB83BB006C5631 /* ListPresenterProtocol.swift */; };
+		B49D2AB927FB83BB006C5631 /* ListDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2AAF27FB83BB006C5631 /* ListDataManagerProtocol.swift */; };
+		B49D2ABA27FB83BB006C5631 /* ListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2AB027FB83BB006C5631 /* ListDataManager.swift */; };
+		B49D2ABB27FB83BB006C5631 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2AB127FB83BB006C5631 /* ListViewController.swift */; };
+		B49D2ABC27FB83BB006C5631 /* ListViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2AB227FB83BB006C5631 /* ListViewControllerProtocol.swift */; };
+		B49D2ABF27FB843F006C5631 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2ABE27FB843F006C5631 /* Builder.swift */; };
+		B49D2AC227FB846D006C5631 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2AC127FB846D006C5631 /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +37,19 @@
 		B49D2A7C27FB7C85006C5631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B49D2A7F27FB7C85006C5631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B49D2A8127FB7C85006C5631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B49D2A8827FB8277006C5631 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B49D2AA927FB83BA006C5631 /* ListOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOutput.swift; sourceTree = "<group>"; };
+		B49D2AAA27FB83BA006C5631 /* ListBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListBuilder.swift; sourceTree = "<group>"; };
+		B49D2AAB27FB83BA006C5631 /* ListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		B49D2AAC27FB83BB006C5631 /* ListInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractorProtocol.swift; sourceTree = "<group>"; };
+		B49D2AAD27FB83BB006C5631 /* ListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		B49D2AAE27FB83BB006C5631 /* ListPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenterProtocol.swift; sourceTree = "<group>"; };
+		B49D2AAF27FB83BB006C5631 /* ListDataManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDataManagerProtocol.swift; sourceTree = "<group>"; };
+		B49D2AB027FB83BB006C5631 /* ListDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDataManager.swift; sourceTree = "<group>"; };
+		B49D2AB127FB83BB006C5631 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		B49D2AB227FB83BB006C5631 /* ListViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewControllerProtocol.swift; sourceTree = "<group>"; };
+		B49D2ABE27FB843F006C5631 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		B49D2AC127FB846D006C5631 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +82,9 @@
 		B49D2A7227FB7C82006C5631 /* PruebaTecnica */ = {
 			isa = PBXGroup;
 			children = (
+				B49D2AC027FB845D006C5631 /* Coordinators */,
+				B49D2A8A27FB82B7006C5631 /* Modules */,
+				B49D2A8727FB824E006C5631 /* Common */,
 				B49D2A7327FB7C82006C5631 /* AppDelegate.swift */,
 				B49D2A7527FB7C82006C5631 /* SceneDelegate.swift */,
 				B49D2A7727FB7C82006C5631 /* ViewController.swift */,
@@ -65,6 +94,88 @@
 				B49D2A8127FB7C85006C5631 /* Info.plist */,
 			);
 			path = PruebaTecnica;
+			sourceTree = "<group>";
+		};
+		B49D2A8727FB824E006C5631 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B49D2A8827FB8277006C5631 /* Coordinator.swift */,
+				B49D2ABE27FB843F006C5631 /* Builder.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B49D2A8A27FB82B7006C5631 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B49D2A8B27FB82BB006C5631 /* List */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B49D2A8B27FB82BB006C5631 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				B49D2ABD27FB83CC006C5631 /* Builder */,
+				B49D2A8F27FB82FE006C5631 /* DataManager */,
+				B49D2A8E27FB82F8006C5631 /* Interactor */,
+				B49D2A8D27FB82F3006C5631 /* Presenter */,
+				B49D2A8C27FB82EE006C5631 /* View */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		B49D2A8C27FB82EE006C5631 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B49D2AA927FB83BA006C5631 /* ListOutput.swift */,
+				B49D2AB127FB83BB006C5631 /* ListViewController.swift */,
+				B49D2AB227FB83BB006C5631 /* ListViewControllerProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B49D2A8D27FB82F3006C5631 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B49D2AAE27FB83BB006C5631 /* ListPresenterProtocol.swift */,
+				B49D2AAD27FB83BB006C5631 /* ListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B49D2A8E27FB82F8006C5631 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B49D2AAB27FB83BA006C5631 /* ListInteractor.swift */,
+				B49D2AAC27FB83BB006C5631 /* ListInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B49D2A8F27FB82FE006C5631 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				B49D2AAF27FB83BB006C5631 /* ListDataManagerProtocol.swift */,
+				B49D2AB027FB83BB006C5631 /* ListDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		B49D2ABD27FB83CC006C5631 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				B49D2AAA27FB83BA006C5631 /* ListBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		B49D2AC027FB845D006C5631 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				B49D2AC127FB846D006C5631 /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +249,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B49D2AB927FB83BB006C5631 /* ListDataManagerProtocol.swift in Sources */,
+				B49D2ABA27FB83BB006C5631 /* ListDataManager.swift in Sources */,
+				B49D2AB627FB83BB006C5631 /* ListInteractorProtocol.swift in Sources */,
+				B49D2AB727FB83BB006C5631 /* ListPresenter.swift in Sources */,
+				B49D2A8927FB8277006C5631 /* Coordinator.swift in Sources */,
+				B49D2AB427FB83BB006C5631 /* ListBuilder.swift in Sources */,
+				B49D2AB827FB83BB006C5631 /* ListPresenterProtocol.swift in Sources */,
 				B49D2A7827FB7C82006C5631 /* ViewController.swift in Sources */,
+				B49D2AB527FB83BB006C5631 /* ListInteractor.swift in Sources */,
+				B49D2AC227FB846D006C5631 /* MainCoordinator.swift in Sources */,
 				B49D2A7427FB7C82006C5631 /* AppDelegate.swift in Sources */,
+				B49D2ABC27FB83BB006C5631 /* ListViewControllerProtocol.swift in Sources */,
 				B49D2A7627FB7C82006C5631 /* SceneDelegate.swift in Sources */,
+				B49D2ABB27FB83BB006C5631 /* ListViewController.swift in Sources */,
+				B49D2AB327FB83BB006C5631 /* ListOutput.swift in Sources */,
+				B49D2ABF27FB843F006C5631 /* Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +418,6 @@
 				INFOPLIST_FILE = PruebaTecnica/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +445,6 @@
 				INFOPLIST_FILE = PruebaTecnica/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
