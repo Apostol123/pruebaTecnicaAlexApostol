@@ -9,5 +9,5 @@
 import Foundation
 
 protocol ListDataManagerProtocol : AnyObject {
-
+    func getDestinations(completion: @escaping (Result<Destinations, APIError>) -> Void) 
 }

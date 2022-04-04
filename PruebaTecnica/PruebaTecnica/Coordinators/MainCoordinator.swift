@@ -51,7 +51,6 @@ class MainCoordinator: Coordinator {
         let vc = ListBuilder { _ in
             
         }.build()
-        vc.view.backgroundColor = .red
         self.navigator.setViewControllers([vc], animated: true)
     }
     

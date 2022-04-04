@@ -9,5 +9,5 @@
 import Foundation
 
 protocol ListInteractorProtocol : AnyObject {
-
+    func getDestinations(completion: @escaping (Result<Destinations, APIError>) -> Void)
 }

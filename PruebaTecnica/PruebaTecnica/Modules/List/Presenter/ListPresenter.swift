@@ -9,9 +9,9 @@
 import Foundation
 
 class ListPresenter {
-    var interactor: ListInteractorProtocol
+    private var interactor: ListInteractorProtocol
     weak var view: ListViewProtocol?
-    var coordinatorOutput: (ListOutput) -> Void
+    private var coordinatorOutput: (ListOutput) -> Void
 
     init(interactor: ListInteractorProtocol, coordinnatorOutput: @escaping (ListOutput) -> Void) {
         self.interactor = interactor
@@ -20,5 +20,14 @@ class ListPresenter {
 }
 
 extension ListPresenter: ListPresenterProtocol {
-    
+    func viewDidLoad() {
+        self.interactor.getDestinations { result in
+            switch result {
+            case .success(let destinations):
+                self.view?.show(content: destinations.results ?? [])
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
 }

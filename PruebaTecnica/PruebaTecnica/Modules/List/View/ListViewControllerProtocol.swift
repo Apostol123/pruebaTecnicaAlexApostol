@@ -9,5 +9,5 @@
 import UIKit
 
 protocol ListViewProtocol: AnyObject {
-    
+    func show(content: [DestinationsResult])
 }

@@ -9,5 +9,5 @@
 import Foundation
 
 protocol ListPresenterProtocol: AnyObject {
-    
+    func viewDidLoad()
 }
