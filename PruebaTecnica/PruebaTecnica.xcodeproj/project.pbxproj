@@ -10,7 +10,6 @@
 		B49D2A7427FB7C82006C5631 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2A7327FB7C82006C5631 /* AppDelegate.swift */; };
 		B49D2A7627FB7C82006C5631 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2A7527FB7C82006C5631 /* SceneDelegate.swift */; };
 		B49D2A7827FB7C82006C5631 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2A7727FB7C82006C5631 /* ViewController.swift */; };
-		B49D2A7B27FB7C82006C5631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B49D2A7927FB7C82006C5631 /* Main.storyboard */; };
 		B49D2A7D27FB7C85006C5631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49D2A7C27FB7C85006C5631 /* Assets.xcassets */; };
 		B49D2A8027FB7C85006C5631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B49D2A7E27FB7C85006C5631 /* LaunchScreen.storyboard */; };
 		B49D2A8927FB8277006C5631 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2A8827FB8277006C5631 /* Coordinator.swift */; };
@@ -26,6 +25,10 @@
 		B49D2ABC27FB83BB006C5631 /* ListViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2AB227FB83BB006C5631 /* ListViewControllerProtocol.swift */; };
 		B49D2ABF27FB843F006C5631 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2ABE27FB843F006C5631 /* Builder.swift */; };
 		B49D2AC227FB846D006C5631 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2AC127FB846D006C5631 /* MainCoordinator.swift */; };
+		B49D2AC527FB882C006C5631 /* Destinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2AC427FB882C006C5631 /* Destinations.swift */; };
+		B49D2ACA27FB88C2006C5631 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2AC927FB88C2006C5631 /* ListCell.swift */; };
+		B49D2ACE27FB894A006C5631 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2ACD27FB894A006C5631 /* Endpoint.swift */; };
+		B49D2AD027FB897A006C5631 /* ServiceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2ACF27FB897A006C5631 /* ServiceProxy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +36,6 @@
 		B49D2A7327FB7C82006C5631 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B49D2A7527FB7C82006C5631 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B49D2A7727FB7C82006C5631 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B49D2A7A27FB7C82006C5631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B49D2A7C27FB7C85006C5631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B49D2A7F27FB7C85006C5631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B49D2A8127FB7C85006C5631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +52,10 @@
 		B49D2AB227FB83BB006C5631 /* ListViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewControllerProtocol.swift; sourceTree = "<group>"; };
 		B49D2ABE27FB843F006C5631 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		B49D2AC127FB846D006C5631 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		B49D2AC427FB882C006C5631 /* Destinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destinations.swift; sourceTree = "<group>"; };
+		B49D2AC927FB88C2006C5631 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		B49D2ACD27FB894A006C5631 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		B49D2ACF27FB897A006C5631 /* ServiceProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProxy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,13 +88,15 @@
 		B49D2A7227FB7C82006C5631 /* PruebaTecnica */ = {
 			isa = PBXGroup;
 			children = (
+				B49D2ACB27FB8939006C5631 /* NetWork */,
+				B49D2A8727FB824E006C5631 /* Common */,
+				B49D2AC327FB880D006C5631 /* Entities */,
 				B49D2AC027FB845D006C5631 /* Coordinators */,
 				B49D2A8A27FB82B7006C5631 /* Modules */,
-				B49D2A8727FB824E006C5631 /* Common */,
+				B49D2AC627FB8872006C5631 /* Components */,
 				B49D2A7327FB7C82006C5631 /* AppDelegate.swift */,
 				B49D2A7527FB7C82006C5631 /* SceneDelegate.swift */,
 				B49D2A7727FB7C82006C5631 /* ViewController.swift */,
-				B49D2A7927FB7C82006C5631 /* Main.storyboard */,
 				B49D2A7C27FB7C85006C5631 /* Assets.xcassets */,
 				B49D2A7E27FB7C85006C5631 /* LaunchScreen.storyboard */,
 				B49D2A8127FB7C85006C5631 /* Info.plist */,
@@ -178,6 +186,55 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		B49D2AC327FB880D006C5631 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B49D2AC427FB882C006C5631 /* Destinations.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		B49D2AC627FB8872006C5631 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B49D2AC727FB8878006C5631 /* CustomUITableViewCell */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B49D2AC727FB8878006C5631 /* CustomUITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B49D2AC827FB88B3006C5631 /* ListCell */,
+			);
+			path = CustomUITableViewCell;
+			sourceTree = "<group>";
+		};
+		B49D2AC827FB88B3006C5631 /* ListCell */ = {
+			isa = PBXGroup;
+			children = (
+				B49D2AC927FB88C2006C5631 /* ListCell.swift */,
+			);
+			path = ListCell;
+			sourceTree = "<group>";
+		};
+		B49D2ACB27FB8939006C5631 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				B49D2ACC27FB893F006C5631 /* Endpoint */,
+				B49D2ACF27FB897A006C5631 /* ServiceProxy.swift */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		B49D2ACC27FB893F006C5631 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				B49D2ACD27FB894A006C5631 /* Endpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -238,7 +295,6 @@
 			files = (
 				B49D2A8027FB7C85006C5631 /* LaunchScreen.storyboard in Resources */,
 				B49D2A7D27FB7C85006C5631 /* Assets.xcassets in Resources */,
-				B49D2A7B27FB7C82006C5631 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,12 +313,16 @@
 				B49D2AB427FB83BB006C5631 /* ListBuilder.swift in Sources */,
 				B49D2AB827FB83BB006C5631 /* ListPresenterProtocol.swift in Sources */,
 				B49D2A7827FB7C82006C5631 /* ViewController.swift in Sources */,
+				B49D2AD027FB897A006C5631 /* ServiceProxy.swift in Sources */,
 				B49D2AB527FB83BB006C5631 /* ListInteractor.swift in Sources */,
 				B49D2AC227FB846D006C5631 /* MainCoordinator.swift in Sources */,
+				B49D2AC527FB882C006C5631 /* Destinations.swift in Sources */,
 				B49D2A7427FB7C82006C5631 /* AppDelegate.swift in Sources */,
+				B49D2ACE27FB894A006C5631 /* Endpoint.swift in Sources */,
 				B49D2ABC27FB83BB006C5631 /* ListViewControllerProtocol.swift in Sources */,
 				B49D2A7627FB7C82006C5631 /* SceneDelegate.swift in Sources */,
 				B49D2ABB27FB83BB006C5631 /* ListViewController.swift in Sources */,
+				B49D2ACA27FB88C2006C5631 /* ListCell.swift in Sources */,
 				B49D2AB327FB83BB006C5631 /* ListOutput.swift in Sources */,
 				B49D2ABF27FB843F006C5631 /* Builder.swift in Sources */,
 			);
@@ -271,14 +331,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B49D2A7927FB7C82006C5631 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B49D2A7A27FB7C82006C5631 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B49D2A7E27FB7C85006C5631 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
