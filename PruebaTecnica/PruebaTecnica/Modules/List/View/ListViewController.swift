@@ -54,6 +54,7 @@ class ListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.definesPresentationContext = true
         self.navigationItem.title = "List"
         view.backgroundColor = .white
         setUpTableViewLayout()
