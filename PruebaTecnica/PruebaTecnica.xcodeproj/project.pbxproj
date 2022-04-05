@@ -17,6 +17,8 @@
 		B40C6FF027FCC8F1005D9B61 /* DestinationDetailPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40C6FE627FCC8F1005D9B61 /* DestinationDetailPresenterProtocol.swift */; };
 		B40C6FF127FCC8F1005D9B61 /* DestinationDetailInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40C6FE727FCC8F1005D9B61 /* DestinationDetailInteractorProtocol.swift */; };
 		B40C6FF227FCC8F1005D9B61 /* DestinationDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40C6FE827FCC8F1005D9B61 /* DestinationDetailPresenter.swift */; };
+		B42A64BC27FCD3CD00C673ED /* MkMapView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42A64BB27FCD3CD00C673ED /* MkMapView+Extensions.swift */; };
+		B42A64BE27FCD96100C673ED /* AnnotationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42A64BD27FCD96100C673ED /* AnnotationData.swift */; };
 		B49D2A7427FB7C82006C5631 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2A7327FB7C82006C5631 /* AppDelegate.swift */; };
 		B49D2A7627FB7C82006C5631 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2A7527FB7C82006C5631 /* SceneDelegate.swift */; };
 		B49D2A7827FB7C82006C5631 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2A7727FB7C82006C5631 /* ViewController.swift */; };
@@ -54,6 +56,8 @@
 		B40C6FE627FCC8F1005D9B61 /* DestinationDetailPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationDetailPresenterProtocol.swift; sourceTree = "<group>"; };
 		B40C6FE727FCC8F1005D9B61 /* DestinationDetailInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationDetailInteractorProtocol.swift; sourceTree = "<group>"; };
 		B40C6FE827FCC8F1005D9B61 /* DestinationDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationDetailPresenter.swift; sourceTree = "<group>"; };
+		B42A64BB27FCD3CD00C673ED /* MkMapView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MkMapView+Extensions.swift"; sourceTree = "<group>"; };
+		B42A64BD27FCD96100C673ED /* AnnotationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationData.swift; sourceTree = "<group>"; };
 		B49D2A7027FB7C82006C5631 /* PruebaTecnica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaTecnica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49D2A7327FB7C82006C5631 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B49D2A7527FB7C82006C5631 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +196,7 @@
 				B49D2ABE27FB843F006C5631 /* Builder.swift */,
 				B49D2AD127FB8FDC006C5631 /* UIImageViewExtensions.swift */,
 				B49D2AD327FC0E49006C5631 /* Loader.swift */,
+				B42A64BB27FCD3CD00C673ED /* MkMapView+Extensions.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				B49D2AC427FB882C006C5631 /* Destinations.swift */,
+				B42A64BD27FCD96100C673ED /* AnnotationData.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -393,6 +399,7 @@
 				B40C6FED27FCC8F1005D9B61 /* DestinationDetailViewController.swift in Sources */,
 				B49D2AB927FB83BB006C5631 /* ListDataManagerProtocol.swift in Sources */,
 				B49D2ABA27FB83BB006C5631 /* ListDataManager.swift in Sources */,
+				B42A64BC27FCD3CD00C673ED /* MkMapView+Extensions.swift in Sources */,
 				B49D2AB627FB83BB006C5631 /* ListInteractorProtocol.swift in Sources */,
 				B49D2AB727FB83BB006C5631 /* ListPresenter.swift in Sources */,
 				B49D2A8927FB8277006C5631 /* Coordinator.swift in Sources */,
@@ -409,6 +416,7 @@
 				B49D2AD027FB897A006C5631 /* ServiceProxy.swift in Sources */,
 				B49D2AB527FB83BB006C5631 /* ListInteractor.swift in Sources */,
 				B49D2AC227FB846D006C5631 /* MainCoordinator.swift in Sources */,
+				B42A64BE27FCD96100C673ED /* AnnotationData.swift in Sources */,
 				B49D2AC527FB882C006C5631 /* Destinations.swift in Sources */,
 				B49D2A7427FB7C82006C5631 /* AppDelegate.swift in Sources */,
 				B49D2ACE27FB894A006C5631 /* Endpoint.swift in Sources */,

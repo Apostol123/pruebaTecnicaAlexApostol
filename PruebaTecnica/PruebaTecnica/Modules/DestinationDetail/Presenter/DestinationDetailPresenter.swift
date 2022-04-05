@@ -22,5 +22,9 @@ class DestinationDetailPresenter {
 }
 
 extension DestinationDetailPresenter: DestinationDetailPresenterProtocol {
+    var destinationData: DestinationsResult {
+        return destinationResult
+    }
+    
     
 }

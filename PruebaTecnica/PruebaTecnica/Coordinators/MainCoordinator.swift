@@ -71,7 +71,6 @@ class MainCoordinator: Coordinator {
         let vc = DestinationDetailBuilder(destinationResult: destinationResult) { _ in
             
         }.build()
-        vc.view.backgroundColor = .red
         navigator.pushViewController(vc, animated: true)
     }
     

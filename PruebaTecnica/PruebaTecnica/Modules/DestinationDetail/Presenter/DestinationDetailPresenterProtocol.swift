@@ -9,5 +9,5 @@
 import Foundation
 
 protocol DestinationDetailPresenterProtocol: AnyObject {
-    
+    var destinationData: DestinationsResult {get}
 }
