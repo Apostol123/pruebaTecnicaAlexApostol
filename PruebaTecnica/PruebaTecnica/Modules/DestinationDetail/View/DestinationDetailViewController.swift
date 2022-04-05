@@ -35,6 +35,7 @@ class DestinationDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        self.navigationItem.title = "Destination Detail"
         setUpMapViewLayout()
         locationManager.delegate = self
         mapView.delegate = self
@@ -56,7 +57,7 @@ class DestinationDetailViewController: UIViewController {
         mapView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
         mapView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
         mapView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
-        mapView.heightAnchor.constraint(equalToConstant: view.frame.height/2).isActive = true
+        mapView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
     
     private func openDeviceLocationSetting() {
@@ -112,10 +113,10 @@ extension DestinationDetailViewController: MKMapViewDelegate {
         _ mapView: MKMapView,
         viewFor annotation: MKAnnotation
     ) -> MKAnnotationView? {
-        guard let annotation = annotation as? AnnotationData else {
+        guard let destinationData = annotation as? AnnotationData else {
             return nil
         }
-        let identifier = "artwork"
+        let identifier = "destinationData"
         var view: MKMarkerAnnotationView
         if let dequeuedView = mapView.dequeueReusableAnnotationView(
             withIdentifier: identifier) as? MKMarkerAnnotationView {
@@ -133,15 +134,27 @@ extension DestinationDetailViewController: MKMapViewDelegate {
         return view
     }
     
-    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-        guard let annotation = view.annotation as? AnnotationData else {
-            return
-        }
-        let placeName = annotation.title
-        let placeInfo = annotation.locationName
-
-        let ac = UIAlertController(title: placeName, message: placeInfo, preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "OK", style: .default))
-        present(ac, animated: true)
+    func mapView(
+      _ mapView: MKMapView,
+      annotationView view: MKAnnotationView,
+      calloutAccessoryControlTapped control: UIControl
+    ) {
+        
+    
+      guard let destinationData = view.annotation as? AnnotationData else {
+        return
+      }
+        
+        let alertController = UIAlertController(title: destinationData.title ?? "" , message: destinationData.locationName ?? "", preferredStyle: .actionSheet)
+        alertController.addAction(UIAlertAction(title: "How to get there", style: .default, handler: { action in
+            let launchOptions = [
+              MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving
+            ]
+              destinationData.mapItem?.openInMaps(launchOptions: launchOptions)
+        }))
+        
+        self.present(alertController, animated: true, completion: nil)
+     
     }
+    
 }
