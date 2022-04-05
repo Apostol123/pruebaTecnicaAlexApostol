@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B40C6FE927FCC8F1005D9B61 /* DestinationDetailOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40C6FDF27FCC8F1005D9B61 /* DestinationDetailOutput.swift */; };
+		B40C6FEA27FCC8F1005D9B61 /* DestinationDetailViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40C6FE027FCC8F1005D9B61 /* DestinationDetailViewControllerProtocol.swift */; };
+		B40C6FEB27FCC8F1005D9B61 /* DestinationDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40C6FE127FCC8F1005D9B61 /* DestinationDetailBuilder.swift */; };
+		B40C6FEC27FCC8F1005D9B61 /* DestinationDetailDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40C6FE227FCC8F1005D9B61 /* DestinationDetailDataManagerProtocol.swift */; };
+		B40C6FED27FCC8F1005D9B61 /* DestinationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40C6FE327FCC8F1005D9B61 /* DestinationDetailViewController.swift */; };
+		B40C6FEE27FCC8F1005D9B61 /* DestinationDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40C6FE427FCC8F1005D9B61 /* DestinationDetailInteractor.swift */; };
+		B40C6FEF27FCC8F1005D9B61 /* DestinationDetailDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40C6FE527FCC8F1005D9B61 /* DestinationDetailDataManager.swift */; };
+		B40C6FF027FCC8F1005D9B61 /* DestinationDetailPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40C6FE627FCC8F1005D9B61 /* DestinationDetailPresenterProtocol.swift */; };
+		B40C6FF127FCC8F1005D9B61 /* DestinationDetailInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40C6FE727FCC8F1005D9B61 /* DestinationDetailInteractorProtocol.swift */; };
+		B40C6FF227FCC8F1005D9B61 /* DestinationDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40C6FE827FCC8F1005D9B61 /* DestinationDetailPresenter.swift */; };
 		B49D2A7427FB7C82006C5631 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2A7327FB7C82006C5631 /* AppDelegate.swift */; };
 		B49D2A7627FB7C82006C5631 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2A7527FB7C82006C5631 /* SceneDelegate.swift */; };
 		B49D2A7827FB7C82006C5631 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2A7727FB7C82006C5631 /* ViewController.swift */; };
@@ -34,6 +44,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B40C6FDF27FCC8F1005D9B61 /* DestinationDetailOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationDetailOutput.swift; sourceTree = "<group>"; };
+		B40C6FE027FCC8F1005D9B61 /* DestinationDetailViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationDetailViewControllerProtocol.swift; sourceTree = "<group>"; };
+		B40C6FE127FCC8F1005D9B61 /* DestinationDetailBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationDetailBuilder.swift; sourceTree = "<group>"; };
+		B40C6FE227FCC8F1005D9B61 /* DestinationDetailDataManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationDetailDataManagerProtocol.swift; sourceTree = "<group>"; };
+		B40C6FE327FCC8F1005D9B61 /* DestinationDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationDetailViewController.swift; sourceTree = "<group>"; };
+		B40C6FE427FCC8F1005D9B61 /* DestinationDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationDetailInteractor.swift; sourceTree = "<group>"; };
+		B40C6FE527FCC8F1005D9B61 /* DestinationDetailDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationDetailDataManager.swift; sourceTree = "<group>"; };
+		B40C6FE627FCC8F1005D9B61 /* DestinationDetailPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationDetailPresenterProtocol.swift; sourceTree = "<group>"; };
+		B40C6FE727FCC8F1005D9B61 /* DestinationDetailInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationDetailInteractorProtocol.swift; sourceTree = "<group>"; };
+		B40C6FE827FCC8F1005D9B61 /* DestinationDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationDetailPresenter.swift; sourceTree = "<group>"; };
 		B49D2A7027FB7C82006C5631 /* PruebaTecnica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaTecnica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49D2A7327FB7C82006C5631 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B49D2A7527FB7C82006C5631 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +93,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B40C6FDE27FCC8F1005D9B61 /* DestinationDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B40C6FF727FCC928005D9B61 /* Builder */,
+				B40C6FF627FCC922005D9B61 /* DataManager */,
+				B40C6FF527FCC90C005D9B61 /* Interactor */,
+				B40C6FF427FCC908005D9B61 /* Presenter */,
+				B40C6FF327FCC902005D9B61 /* View */,
+			);
+			path = DestinationDetail;
+			sourceTree = "<group>";
+		};
+		B40C6FF327FCC902005D9B61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B40C6FDF27FCC8F1005D9B61 /* DestinationDetailOutput.swift */,
+				B40C6FE327FCC8F1005D9B61 /* DestinationDetailViewController.swift */,
+				B40C6FE027FCC8F1005D9B61 /* DestinationDetailViewControllerProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B40C6FF427FCC908005D9B61 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B40C6FE627FCC8F1005D9B61 /* DestinationDetailPresenterProtocol.swift */,
+				B40C6FE827FCC8F1005D9B61 /* DestinationDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B40C6FF527FCC90C005D9B61 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B40C6FE727FCC8F1005D9B61 /* DestinationDetailInteractorProtocol.swift */,
+				B40C6FE427FCC8F1005D9B61 /* DestinationDetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B40C6FF627FCC922005D9B61 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				B40C6FE227FCC8F1005D9B61 /* DestinationDetailDataManagerProtocol.swift */,
+				B40C6FE527FCC8F1005D9B61 /* DestinationDetailDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		B40C6FF727FCC928005D9B61 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				B40C6FE127FCC8F1005D9B61 /* DestinationDetailBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
 		B49D2A6727FB7C82006C5631 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +199,7 @@
 		B49D2A8A27FB82B7006C5631 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				B40C6FDE27FCC8F1005D9B61 /* DestinationDetail */,
 				B49D2A8B27FB82BB006C5631 /* List */,
 			);
 			path = Modules;
@@ -311,26 +389,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B40C6FE927FCC8F1005D9B61 /* DestinationDetailOutput.swift in Sources */,
+				B40C6FED27FCC8F1005D9B61 /* DestinationDetailViewController.swift in Sources */,
 				B49D2AB927FB83BB006C5631 /* ListDataManagerProtocol.swift in Sources */,
 				B49D2ABA27FB83BB006C5631 /* ListDataManager.swift in Sources */,
 				B49D2AB627FB83BB006C5631 /* ListInteractorProtocol.swift in Sources */,
 				B49D2AB727FB83BB006C5631 /* ListPresenter.swift in Sources */,
 				B49D2A8927FB8277006C5631 /* Coordinator.swift in Sources */,
+				B40C6FEA27FCC8F1005D9B61 /* DestinationDetailViewControllerProtocol.swift in Sources */,
+				B40C6FF027FCC8F1005D9B61 /* DestinationDetailPresenterProtocol.swift in Sources */,
 				B49D2AB427FB83BB006C5631 /* ListBuilder.swift in Sources */,
 				B49D2AB827FB83BB006C5631 /* ListPresenterProtocol.swift in Sources */,
+				B40C6FEF27FCC8F1005D9B61 /* DestinationDetailDataManager.swift in Sources */,
+				B40C6FEC27FCC8F1005D9B61 /* DestinationDetailDataManagerProtocol.swift in Sources */,
 				B49D2AD227FB8FDC006C5631 /* UIImageViewExtensions.swift in Sources */,
 				B49D2AD427FC0E49006C5631 /* Loader.swift in Sources */,
 				B49D2A7827FB7C82006C5631 /* ViewController.swift in Sources */,
+				B40C6FF227FCC8F1005D9B61 /* DestinationDetailPresenter.swift in Sources */,
 				B49D2AD027FB897A006C5631 /* ServiceProxy.swift in Sources */,
 				B49D2AB527FB83BB006C5631 /* ListInteractor.swift in Sources */,
 				B49D2AC227FB846D006C5631 /* MainCoordinator.swift in Sources */,
 				B49D2AC527FB882C006C5631 /* Destinations.swift in Sources */,
 				B49D2A7427FB7C82006C5631 /* AppDelegate.swift in Sources */,
 				B49D2ACE27FB894A006C5631 /* Endpoint.swift in Sources */,
+				B40C6FEE27FCC8F1005D9B61 /* DestinationDetailInteractor.swift in Sources */,
 				B49D2ABC27FB83BB006C5631 /* ListViewControllerProtocol.swift in Sources */,
 				B49D2A7627FB7C82006C5631 /* SceneDelegate.swift in Sources */,
+				B40C6FEB27FCC8F1005D9B61 /* DestinationDetailBuilder.swift in Sources */,
 				B49D2ABB27FB83BB006C5631 /* ListViewController.swift in Sources */,
 				B49D2ACA27FB88C2006C5631 /* ListCell.swift in Sources */,
+				B40C6FF127FCC8F1005D9B61 /* DestinationDetailInteractorProtocol.swift in Sources */,
 				B49D2AB327FB83BB006C5631 /* ListOutput.swift in Sources */,
 				B49D2ABF27FB843F006C5631 /* Builder.swift in Sources */,
 			);
