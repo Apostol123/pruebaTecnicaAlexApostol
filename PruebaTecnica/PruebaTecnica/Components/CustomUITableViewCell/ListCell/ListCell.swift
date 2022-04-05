@@ -44,15 +44,15 @@ class ListCell: UITableViewCell {
     
     func configure(address: String, imageUrl: String) {
         self.addressLabel.text = address
-        self.destinationImage.load(url: URL(string: imageUrl))
+        self.destinationImage.load(url: URL(string: imageUrl), placeHolder: "DestinationplaceHolder")
     }
     
     private func commonInit() {
         self.selectionStyle = .none
         self.contentView.addSubview(mainStack)
         mainStack.translatesAutoresizingMaskIntoConstraints = false
-        mainStack.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
-        mainStack.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
+        mainStack.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16).isActive = true
+        mainStack.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16).isActive = true
         mainStack.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20).isActive = true
         mainStack.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
     }

@@ -8,6 +8,6 @@
 
 import UIKit
 
-protocol ListViewProtocol: AnyObject {
+protocol ListViewProtocol: AnyObject, Loader {
     func show(content: [DestinationsResult])
 }

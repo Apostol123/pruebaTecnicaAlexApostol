@@ -30,6 +30,7 @@
 		B49D2ACE27FB894A006C5631 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2ACD27FB894A006C5631 /* Endpoint.swift */; };
 		B49D2AD027FB897A006C5631 /* ServiceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2ACF27FB897A006C5631 /* ServiceProxy.swift */; };
 		B49D2AD227FB8FDC006C5631 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2AD127FB8FDC006C5631 /* UIImageViewExtensions.swift */; };
+		B49D2AD427FC0E49006C5631 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49D2AD327FC0E49006C5631 /* Loader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		B49D2ACD27FB894A006C5631 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		B49D2ACF27FB897A006C5631 /* ServiceProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProxy.swift; sourceTree = "<group>"; };
 		B49D2AD127FB8FDC006C5631 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
+		B49D2AD327FC0E49006C5631 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				B49D2A8827FB8277006C5631 /* Coordinator.swift */,
 				B49D2ABE27FB843F006C5631 /* Builder.swift */,
 				B49D2AD127FB8FDC006C5631 /* UIImageViewExtensions.swift */,
+				B49D2AD327FC0E49006C5631 /* Loader.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				B49D2AB427FB83BB006C5631 /* ListBuilder.swift in Sources */,
 				B49D2AB827FB83BB006C5631 /* ListPresenterProtocol.swift in Sources */,
 				B49D2AD227FB8FDC006C5631 /* UIImageViewExtensions.swift in Sources */,
+				B49D2AD427FC0E49006C5631 /* Loader.swift in Sources */,
 				B49D2A7827FB7C82006C5631 /* ViewController.swift in Sources */,
 				B49D2AD027FB897A006C5631 /* ServiceProxy.swift in Sources */,
 				B49D2AB527FB83BB006C5631 /* ListInteractor.swift in Sources */,

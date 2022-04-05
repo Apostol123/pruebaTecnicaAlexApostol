@@ -21,11 +21,14 @@ class ListPresenter {
 
 extension ListPresenter: ListPresenterProtocol {
     func viewDidLoad() {
+        view?.showLoader()
         self.interactor.getDestinations { result in
             switch result {
             case .success(let destinations):
+                self.view?.hideLoader()
                 self.view?.show(content: destinations.results ?? [])
             case .failure(let error):
+                self.view?.hideLoader()
                 print(error)
             }
         }
