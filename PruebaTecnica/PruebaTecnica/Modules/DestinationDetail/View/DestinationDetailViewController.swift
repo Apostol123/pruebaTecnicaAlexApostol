@@ -151,7 +151,10 @@ extension DestinationDetailViewController: MKMapViewDelegate {
               MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving
             ]
               destinationData.mapItem?.openInMaps(launchOptions: launchOptions)
+            self.dismiss(animated: true, completion: nil)
         }))
+        
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
         self.present(alertController, animated: true, completion: nil)
      
