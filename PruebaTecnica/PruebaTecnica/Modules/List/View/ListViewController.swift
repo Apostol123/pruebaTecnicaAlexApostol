@@ -123,6 +123,18 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
         cell.configure(address: item.name ?? "", imageUrl: item.cover ?? "")
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item: DestinationsResult
+        
+        if searchController.isActive && searchController.searchBar.text != "" {
+            item = filteredContent[indexPath.row]
+        } else {
+            item = content[indexPath.row]
+        }
+        
+        presenter.didSelectDestinationListItem(destinationResult: item)
+    }
 }
 
 extension ListViewController: UISearchControllerDelegate {

@@ -10,4 +10,5 @@ import Foundation
 
 protocol ListPresenterProtocol: AnyObject {
     func viewDidLoad()
+    func didSelectDestinationListItem(destinationResult: DestinationsResult)
 }

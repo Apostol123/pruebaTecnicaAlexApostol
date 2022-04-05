@@ -14,6 +14,8 @@ class MainCoordinator: Coordinator {
     enum MainCoordinatorState {
         case initial
         case willShowListFlow
+        case didShowDestinationList(destination: DestinationsResult)
+        case willShowDestinationDetail(destination: DestinationsResult)
     }
     
     private var state: MainCoordinatorState
@@ -32,7 +34,9 @@ class MainCoordinator: Coordinator {
         switch  self.state {
         case .willShowListFlow:
             goToListFlow()
-        case .initial:
+        case .willShowDestinationDetail(let destination):
+            goToDestionationDetailFlow(destinationResult: destination)
+        case .initial, .didShowDestinationList:
             fatalError("Unexpected Case in Main Coordinator")
         }
     }
@@ -41,17 +45,34 @@ class MainCoordinator: Coordinator {
         switch nextState {
         case .initial:
             return .willShowListFlow
-        case .willShowListFlow:
+        case .didShowDestinationList(let destinationResult):
+            return .willShowDestinationDetail(destination: destinationResult)
+        case .willShowListFlow, .willShowDestinationDetail:
             return nextState
+       
         }
     }
     
     
     private func goToListFlow() {
-        let vc = ListBuilder { _ in
+        let vc = ListBuilder { output in
+            
+            switch output {
+            case .goToDestinationDetail(let destination):
+                self.state = .didShowDestinationList(destination: destination)
+                self.loop()
+            }
             
         }.build()
         self.navigator.setViewControllers([vc], animated: true)
+    }
+    
+    private func goToDestionationDetailFlow(destinationResult: DestinationsResult) {
+        let vc = DestinationDetailBuilder(destinationResult: destinationResult) { _ in
+            
+        }.build()
+        vc.view.backgroundColor = .red
+        navigator.pushViewController(vc, animated: true)
     }
     
 }

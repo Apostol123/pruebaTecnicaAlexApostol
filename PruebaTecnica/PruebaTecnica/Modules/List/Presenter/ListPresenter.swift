@@ -33,4 +33,8 @@ extension ListPresenter: ListPresenterProtocol {
             }
         }
     }
+    
+    func didSelectDestinationListItem(destinationResult: DestinationsResult)  {
+        coordinatorOutput(.goToDestinationDetail(destination: destinationResult))
+    }
 }

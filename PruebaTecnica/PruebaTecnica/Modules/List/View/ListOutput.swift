@@ -9,4 +9,5 @@
 import Foundation
 
 enum ListOutput {
+    case goToDestinationDetail(destination: DestinationsResult)
 }
