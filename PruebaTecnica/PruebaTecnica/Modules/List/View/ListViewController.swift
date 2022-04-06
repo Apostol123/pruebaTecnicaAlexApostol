@@ -37,7 +37,7 @@ class ListViewController: UIViewController {
         searchView.searchBar.sizeToFit()
         searchView.searchBar.barStyle = .black
         searchView.searchBar.backgroundColor = .clear
-        searchView.searchBar.placeholder = "Filtrar destinos"
+        searchView.searchBar.placeholder = presenter.searchBarPlaceHolder
         searchView.searchResultsUpdater = self
         return searchView
     }()
@@ -55,7 +55,7 @@ class ListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.definesPresentationContext = true
-        self.navigationItem.title = "List"
+        self.navigationItem.title = presenter.viewTitle
         view.backgroundColor = .white
         setUpTableViewLayout()
         manageSearchBarController()
@@ -81,11 +81,7 @@ class ListViewController: UIViewController {
     
     private func filterContentForSearchText(_ searchText: String,
                                             category: DestinationsResult? = nil) {
-        filteredContent = content.filter({ destination in
-            let destinationName = destination.name ?? ""
-            return destinationName.lowercased().contains(searchText.lowercased())
-        })
-      
+        filteredContent = presenter.filterContentForSearchText(text: searchText, arrayToFilter: content)
         reloadTableView()
     }
 

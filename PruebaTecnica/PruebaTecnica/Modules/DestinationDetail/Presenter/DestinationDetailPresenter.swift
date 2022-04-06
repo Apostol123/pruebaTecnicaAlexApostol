@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import MapKit
 
 class DestinationDetailPresenter {
     private var interactor: DestinationDetailInteractorProtocol
@@ -23,8 +24,42 @@ class DestinationDetailPresenter {
 
 extension DestinationDetailPresenter: DestinationDetailPresenterProtocol {
     var destinationData: DestinationsResult {
-        return destinationResult
+         destinationResult
     }
     
+    var annotationData: AnnotationData {
+        AnnotationData(
+            title: destinationData.name ?? "",
+            locationName: destinationData.address ?? "",
+            discipline: destinationData.type?.rawValue ?? "",
+          coordinate: CLLocationCoordinate2D(latitude: destinationData.location?.latitude ?? 0.0, longitude: destinationData.location?.longitude ?? 0.0))
+    }
     
+    var annotationLocation: CLLocation {
+        CLLocation(latitude: destinationData.location?.latitude ?? 0.0, longitude: destinationData.location?.longitude ?? 0.0)
+    }
+    
+    var viewTitle: String {
+        "Destination Detail"
+    }
+    
+    var noMapPermissionAlertSubtitle: String {
+        "For best results, let your device turn on location service."
+    }
+    
+    var annotationID: String {
+        "destinationData"
+    }
+    
+    var mapAnotationAlertTitle: String {
+        "How to get there"
+    }
+    
+    var commonCancel: String {
+        "Cancel"
+    }
+    
+    var commonOK: String {
+        "OK"
+    }
 }
