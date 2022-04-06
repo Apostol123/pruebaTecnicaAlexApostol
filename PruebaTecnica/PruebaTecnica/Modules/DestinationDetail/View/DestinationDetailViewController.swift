@@ -35,20 +35,13 @@ class DestinationDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        self.navigationItem.title = "Destination Detail"
+        self.navigationItem.title = presenter.viewTitle
         setUpMapViewLayout()
         locationManager.delegate = self
         mapView.delegate = self
-        let destinationLocation = CLLocation(latitude: destinationData.location?.latitude ?? 0.0, longitude: destinationData.location?.longitude ?? 0.0)
+        mapView.addAnnotation(presenter.annotationData)
         
-        let artwork = AnnotationData(
-            title: destinationData.name ?? "",
-            locationName: destinationData.address ?? "",
-            discipline: destinationData.type?.rawValue ?? "",
-          coordinate: CLLocationCoordinate2D(latitude: destinationData.location?.latitude ?? 0.0, longitude: destinationData.location?.longitude ?? 0.0))
-        mapView.addAnnotation(artwork)
-        
-        mapView.centerToLocation(destinationLocation)
+        mapView.centerToLocation(presenter.annotationLocation)
     }
     
     private func setUpMapViewLayout() {
@@ -61,15 +54,15 @@ class DestinationDetailViewController: UIViewController {
     }
     
     private func openDeviceLocationSetting() {
-        let alertController = UIAlertController(title: "", message:"For best results, let your device turn on location service.", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) {
+        let alertController = UIAlertController(title: "", message:presenter.noMapPermissionAlertSubtitle, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: presenter.commonOK, style: UIAlertAction.Style.default) {
             UIAlertAction in
             let settingsUrl = URL(string: UIApplication.openSettingsURLString)
             if let url = settingsUrl {
                 UIApplication.shared.openURL(url)
             }
         }
-        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default) {
+        let cancelAction = UIAlertAction(title: presenter.commonCancel, style: UIAlertAction.Style.default) {
             UIAlertAction in
             self.navigationController?.popViewController(animated: true)
         }
@@ -116,15 +109,15 @@ extension DestinationDetailViewController: MKMapViewDelegate {
         guard let destinationData = annotation as? AnnotationData else {
             return nil
         }
-        let identifier = "destinationData"
+        let identifier = presenter.annotationID
         var view: MKMarkerAnnotationView
         if let dequeuedView = mapView.dequeueReusableAnnotationView(
             withIdentifier: identifier) as? MKMarkerAnnotationView {
-            dequeuedView.annotation = annotation
+            dequeuedView.annotation = destinationData
             view = dequeuedView
         } else {
             view = MKMarkerAnnotationView(
-                annotation: annotation,
+                annotation: destinationData,
                 reuseIdentifier: identifier)
             view.canShowCallout = true
             view.calloutOffset = CGPoint(x: -5, y: 5)
@@ -146,7 +139,7 @@ extension DestinationDetailViewController: MKMapViewDelegate {
       }
         
         let alertController = UIAlertController(title: destinationData.title ?? "" , message: destinationData.locationName ?? "", preferredStyle: .actionSheet)
-        alertController.addAction(UIAlertAction(title: "How to get there", style: .default, handler: { action in
+        alertController.addAction(UIAlertAction(title: presenter.mapAnotationAlertTitle, style: .default, handler: { action in
             let launchOptions = [
               MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving
             ]
@@ -154,7 +147,7 @@ extension DestinationDetailViewController: MKMapViewDelegate {
             self.dismiss(animated: true, completion: nil)
         }))
         
-        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alertController.addAction(UIAlertAction(title: presenter.commonCancel, style: .cancel, handler: nil))
         
         self.present(alertController, animated: true, completion: nil)
      

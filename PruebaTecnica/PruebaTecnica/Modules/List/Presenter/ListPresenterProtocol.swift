@@ -11,4 +11,7 @@ import Foundation
 protocol ListPresenterProtocol: AnyObject {
     func viewDidLoad()
     func didSelectDestinationListItem(destinationResult: DestinationsResult)
+    var viewTitle: String {get}
+    var searchBarPlaceHolder: String {get}
+    func filterContentForSearchText(text: String,  arrayToFilter:[DestinationsResult]) -> [DestinationsResult]  
 }

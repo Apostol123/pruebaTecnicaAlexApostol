@@ -37,4 +37,20 @@ extension ListPresenter: ListPresenterProtocol {
     func didSelectDestinationListItem(destinationResult: DestinationsResult)  {
         coordinatorOutput(.goToDestinationDetail(destination: destinationResult))
     }
+    
+    func filterContentForSearchText(text: String, arrayToFilter:[DestinationsResult]) -> [DestinationsResult]  {
+        return   arrayToFilter.filter({ destination in
+            let destinationName = destination.name ?? ""
+            return destinationName.lowercased().contains(text.lowercased())
+        })
+      
+    }
+    
+    var viewTitle: String {
+         "List"
+    }
+    
+    var searchBarPlaceHolder: String {
+        "Filtrar destinos"
+    }
 }
